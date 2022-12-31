@@ -31,6 +31,7 @@ app.post('/messages', (req, res) => {
     messageData = Object.assign(Object.assign({}, messageData), { likes: [] });
     messageData = Object.assign(Object.assign({}, messageData), { name: (0, addNameToASingleMessage_1.addNameToASingleMessage)(messageData.authorId).name });
     mockMessages_1.mockMessages.push(messageData);
+    console.log(messageData);
 });
 app.post('/likes', (req, res) => {
     const likeReq = req.body;
