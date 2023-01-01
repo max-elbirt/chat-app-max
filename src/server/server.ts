@@ -2,7 +2,7 @@ import express, {query} from 'express';
 import {attachNameToMessage} from "./helperFunctions/attachNameToMessage";
 import {mockMessages} from "./mockMessages";
 import cors from 'cors';
-import {parseUsersForNameAndId} from "./node_modules/parseUsersForNameAndId";
+import {parseUsersForNameAndId} from "./helperFunctions/parseUsersForNameAndId";
 import {findUserDetails} from "./helperFunctions/findUserDetails";
 import {User} from "../types/user";
 import bodyParser from "body-parser";
